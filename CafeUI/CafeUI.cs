@@ -26,9 +26,7 @@ namespace CafeUI
                   "2. Delete Meal\n" +
                   "3. View all Cafe Menu Items\n" +
                   "4. Exit Application");
-                    //input
                     string menuSelect = Console.ReadLine();
-                    //eval/act
                     switch (menuSelect)
                     {
                         case "1": CreateNewMeal();
@@ -77,6 +75,23 @@ namespace CafeUI
                 Console.WriteLine($"--- #{menuItem.MealNumber}: {menuItem.MealName}. Flavor text :{menuItem.Description}. Contains:{menuItem.Ingredients}. Price: {menuItem.Price}---");
             }
 
+        }
+        private void DeleteMeal()
+        {
+            Console.Clear();
+            DisplayAllMeals();
+            Console.WriteLine("Enter the Meal Number you wish to delete:");
+            int DeletedMeal = Int32.Parse(Console.ReadLine());
+            bool clearingCheck = _MenuItemRepo.RemoveMenuItemFromList(DeletedMeal);
+            if(clearingCheck == true)
+            {
+                Console.WriteLine("Item Removed successfully.");
+                Console.ReadKey();
+            }
+            else
+            {
+                Console.WriteLine("Delete failed.");
+            }
         }
     }
 }
