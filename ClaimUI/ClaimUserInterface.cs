@@ -1,4 +1,5 @@
-﻿using ClaimREPO;
+﻿using Claim;
+using ClaimREPO;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -42,9 +43,59 @@ namespace ClaimUI
                 Console.Clear();
             }
         }
-        private void CreatNewClaim()
+        private void CreateNewClaim()
         {
             Console.Clear();
+            Claim.Claim newClaim = new Claim.Claim();
+            Console.WriteLine("Enter the claim id:");
+            newClaim.ClaimID = Int32.Parse(Console.ReadLine());
+            Console.WriteLine("Enter the claim type (Car, Home, Theft):");
+            string type = Console.ReadLine().ToLower();
+            string car = "car";
+            string home = "home";
+            string theft = "theft";
+            switch (type)
+            {
+                case "car":
+                    newClaim.ClaimType = car;
+                    break;
+                case "home":
+                    newClaim.ClaimType = home;
+                    break;
+                case "theft":
+                    newClaim.ClaimType = theft;
+                    break;
+                default:
+                    Console.WriteLine("Invalid claim type. Please enter a valid claim type.");
+                    break;
+            }
+            Console.WriteLine("Enter a claim desciption:");
+            newClaim.Description = Console.ReadLine();
+            Console.WriteLine("Amount of Damage:");
+            newClaim.ClaimAmount = Decimal.Parse(Console.ReadLine());
+            Console.WriteLine("Date of Accident (dd/mm/yy):");
+            newClaim.DateOfAccident = DateTime.Parse(Console.ReadLine());
+            Console.WriteLine("Date of Claim (dd/mm/yy):");
+            newClaim.DateOfClaim = DateTime.Parse(Console.ReadLine());
+            TimeSpan validCheck = newClaim.DateOfClaim - newClaim.DateOfAccident;
+            if(validCheck.TotalDays < 31)
+            {
+                newClaim.IsValid = true;
+            }
+            else
+            {
+                newClaim.IsValid = false;
+            }
+            _ClaimRepo.AddClaimToList(newClaim);
+        }
+        private void DisplayAllClaims()
+        {
+            List<Claim.Claim> listOfClaims = _ClaimRepo.GetClaimList();
+            Console.WriteLine("ClaimID     Type     Description     Amount     DateOfAccident     DateOfClaim     IsValid");
+            foreach (Claim.Claim claim in listOfClaims)
+            {
+                Console.WriteLine($"{claim.ClaimID}     {claim.ClaimType}     {claim.Description}     {claim.ClaimAmount}     {claim.DateOfAccident}     {claim.DateOfClaim}     {claim.IsValid}");
+            }
         }
     }
 }

@@ -12,17 +12,17 @@ namespace Claim
         public string ClaimType { get; set; } //Car, Home, or Theft
         public string Description { get; set; }
         public decimal ClaimAmount { get; set; }
-        public DateTime DateOfIncident { get; set; }
+        public DateTime DateOfAccident { get; set; }
         public DateTime DateOfClaim { get; set; }
         public bool IsValid { get; set; } //only for 30 days
         public Claim() { }
 
-        public Claim(int claimID, string claimType, string description, decimal claimAmount, DateTime dateOfIncedent, DateTime dateOfClaim, bool isValid)
+        public Claim(int claimID, string claimType, string description, decimal claimAmount, DateTime dateOfAccident, DateTime dateOfClaim, bool isValid)
         {
             ClaimID = claimID;
             Description = description;
             ClaimAmount = claimAmount;
-            DateOfIncident = dateOfIncedent;
+            DateOfAccident = dateOfAccident;
             DateOfClaim = dateOfClaim;
             IsValid = isValid;
         }
