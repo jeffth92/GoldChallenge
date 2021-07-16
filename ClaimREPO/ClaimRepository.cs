@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace ClaimREPO
 {
-    public class ClaimRepository // See all claims, Take Care of next claim, Enter a new claim
+    public class ClaimRepository
     {
         private List<Claim.Claim> _ListOfClaims = new List<Claim.Claim>();
         public void AddClaimToList(Claim.Claim claim)

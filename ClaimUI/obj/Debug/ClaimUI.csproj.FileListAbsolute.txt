@@ -1,0 +1,12 @@
+C:\Users\jefft\source\repos\GoldChallenge\ClaimUI\bin\Debug\ClaimUI.exe.config
+C:\Users\jefft\source\repos\GoldChallenge\ClaimUI\bin\Debug\ClaimUI.exe
+C:\Users\jefft\source\repos\GoldChallenge\ClaimUI\bin\Debug\ClaimUI.pdb
+C:\Users\jefft\source\repos\GoldChallenge\ClaimUI\bin\Debug\Claim.dll
+C:\Users\jefft\source\repos\GoldChallenge\ClaimUI\bin\Debug\ClaimREPO.dll
+C:\Users\jefft\source\repos\GoldChallenge\ClaimUI\bin\Debug\ClaimREPO.pdb
+C:\Users\jefft\source\repos\GoldChallenge\ClaimUI\bin\Debug\Claim.pdb
+C:\Users\jefft\source\repos\GoldChallenge\ClaimUI\obj\Debug\ClaimUI.csproj.AssemblyReference.cache
+C:\Users\jefft\source\repos\GoldChallenge\ClaimUI\obj\Debug\ClaimUI.csproj.CoreCompileInputs.cache
+C:\Users\jefft\source\repos\GoldChallenge\ClaimUI\obj\Debug\ClaimUI.csproj.CopyComplete
+C:\Users\jefft\source\repos\GoldChallenge\ClaimUI\obj\Debug\ClaimUI.exe
+C:\Users\jefft\source\repos\GoldChallenge\ClaimUI\obj\Debug\ClaimUI.pdb

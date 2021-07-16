@@ -55,6 +55,10 @@
       <Project>{0625C441-4A67-43FA-8C2A-CC5F7AB6EC73}</Project>
       <Name>ClaimREPO</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Claim\ClaimClass.csproj">
+      <Project>{55C85949-1CEE-4326-8E03-C479B3A31EEC}</Project>
+      <Name>ClaimClass</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -1,0 +1,9 @@
+C:\Users\jefft\source\repos\GoldChallenge\ClaimREPO\bin\Debug\ClaimREPO.dll
+C:\Users\jefft\source\repos\GoldChallenge\ClaimREPO\bin\Debug\ClaimREPO.pdb
+C:\Users\jefft\source\repos\GoldChallenge\ClaimREPO\bin\Debug\Claim.dll
+C:\Users\jefft\source\repos\GoldChallenge\ClaimREPO\bin\Debug\Claim.pdb
+C:\Users\jefft\source\repos\GoldChallenge\ClaimREPO\obj\Debug\ClaimREPO.csproj.AssemblyReference.cache
+C:\Users\jefft\source\repos\GoldChallenge\ClaimREPO\obj\Debug\ClaimREPO.csproj.CoreCompileInputs.cache
+C:\Users\jefft\source\repos\GoldChallenge\ClaimREPO\obj\Debug\ClaimREPO.csproj.CopyComplete
+C:\Users\jefft\source\repos\GoldChallenge\ClaimREPO\obj\Debug\ClaimREPO.dll
+C:\Users\jefft\source\repos\GoldChallenge\ClaimREPO\obj\Debug\ClaimREPO.pdb

@@ -1,0 +1,6 @@
+C:\Users\jefft\source\repos\GoldChallenge\Claim\bin\Debug\Claim.dll
+C:\Users\jefft\source\repos\GoldChallenge\Claim\bin\Debug\Claim.pdb
+C:\Users\jefft\source\repos\GoldChallenge\Claim\obj\Debug\ClaimClass.csproj.AssemblyReference.cache
+C:\Users\jefft\source\repos\GoldChallenge\Claim\obj\Debug\ClaimClass.csproj.CoreCompileInputs.cache
+C:\Users\jefft\source\repos\GoldChallenge\Claim\obj\Debug\Claim.dll
+C:\Users\jefft\source\repos\GoldChallenge\Claim\obj\Debug\Claim.pdb
