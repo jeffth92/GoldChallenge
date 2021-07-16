@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ClaimREPO
 {
-    public class Class1
+    public class ClaimRepository
     {
     }
 }
