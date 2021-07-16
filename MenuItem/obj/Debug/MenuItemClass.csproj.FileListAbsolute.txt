@@ -1,0 +1,6 @@
+C:\Users\jefft\source\repos\GoldChallenge\MenuItem\bin\Debug\MenuItem.dll
+C:\Users\jefft\source\repos\GoldChallenge\MenuItem\bin\Debug\MenuItem.pdb
+C:\Users\jefft\source\repos\GoldChallenge\MenuItem\obj\Debug\MenuItemClass.csproj.AssemblyReference.cache
+C:\Users\jefft\source\repos\GoldChallenge\MenuItem\obj\Debug\MenuItemClass.csproj.CoreCompileInputs.cache
+C:\Users\jefft\source\repos\GoldChallenge\MenuItem\obj\Debug\MenuItem.dll
+C:\Users\jefft\source\repos\GoldChallenge\MenuItem\obj\Debug\MenuItem.pdb

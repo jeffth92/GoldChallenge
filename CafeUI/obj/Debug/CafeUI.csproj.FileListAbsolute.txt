@@ -1,0 +1,12 @@
+C:\Users\jefft\source\repos\GoldChallenge\CafeUI\bin\Debug\CafeUI.exe.config
+C:\Users\jefft\source\repos\GoldChallenge\CafeUI\bin\Debug\CafeUI.exe
+C:\Users\jefft\source\repos\GoldChallenge\CafeUI\bin\Debug\CafeUI.pdb
+C:\Users\jefft\source\repos\GoldChallenge\CafeUI\bin\Debug\CafeREPO.dll
+C:\Users\jefft\source\repos\GoldChallenge\CafeUI\bin\Debug\MenuItem.dll
+C:\Users\jefft\source\repos\GoldChallenge\CafeUI\bin\Debug\CafeREPO.pdb
+C:\Users\jefft\source\repos\GoldChallenge\CafeUI\bin\Debug\MenuItem.pdb
+C:\Users\jefft\source\repos\GoldChallenge\CafeUI\obj\Debug\CafeUI.csproj.AssemblyReference.cache
+C:\Users\jefft\source\repos\GoldChallenge\CafeUI\obj\Debug\CafeUI.csproj.CoreCompileInputs.cache
+C:\Users\jefft\source\repos\GoldChallenge\CafeUI\obj\Debug\CafeUI.csproj.CopyComplete
+C:\Users\jefft\source\repos\GoldChallenge\CafeUI\obj\Debug\CafeUI.exe
+C:\Users\jefft\source\repos\GoldChallenge\CafeUI\obj\Debug\CafeUI.pdb

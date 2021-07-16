@@ -43,11 +43,22 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CafeUI.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CafeREPO\CafeREPO.csproj">
+      <Project>{C123E078-22A6-4B7D-B19E-DB117EC5A41A}</Project>
+      <Name>CafeREPO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MenuItem\MenuItemClass.csproj">
+      <Project>{7FD83CF5-2ED3-462B-804A-5F92DABFF5F2}</Project>
+      <Name>MenuItemClass</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

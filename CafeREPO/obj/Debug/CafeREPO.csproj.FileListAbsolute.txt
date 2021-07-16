@@ -1,0 +1,9 @@
+C:\Users\jefft\source\repos\GoldChallenge\CafeREPO\bin\Debug\CafeREPO.dll
+C:\Users\jefft\source\repos\GoldChallenge\CafeREPO\bin\Debug\CafeREPO.pdb
+C:\Users\jefft\source\repos\GoldChallenge\CafeREPO\bin\Debug\MenuItem.dll
+C:\Users\jefft\source\repos\GoldChallenge\CafeREPO\bin\Debug\MenuItem.pdb
+C:\Users\jefft\source\repos\GoldChallenge\CafeREPO\obj\Debug\CafeREPO.csproj.AssemblyReference.cache
+C:\Users\jefft\source\repos\GoldChallenge\CafeREPO\obj\Debug\CafeREPO.csproj.CoreCompileInputs.cache
+C:\Users\jefft\source\repos\GoldChallenge\CafeREPO\obj\Debug\CafeREPO.csproj.CopyComplete
+C:\Users\jefft\source\repos\GoldChallenge\CafeREPO\obj\Debug\CafeREPO.dll
+C:\Users\jefft\source\repos\GoldChallenge\CafeREPO\obj\Debug\CafeREPO.pdb

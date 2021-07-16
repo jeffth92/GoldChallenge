@@ -46,7 +46,6 @@ namespace CafeUI
                     Console.WriteLine("Press any key to continue.");
                     Console.ReadKey();
                     Console.Clear();
-                    break;
                 }
             }
         }
