@@ -128,7 +128,10 @@ namespace BadgeUI
         }
         private void ListAllBadges()
         {
-
+            foreach(KeyValuePair<int, List<string>> kvp in badgeDictionary)
+            {
+                Console.WriteLine($"Badge #{kvp.Key} Door Access {kvp.Value}");
+            }
         }
     }
 }
