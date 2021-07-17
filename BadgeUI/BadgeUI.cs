@@ -38,7 +38,7 @@ namespace BadgeUI
                             EditBadge();
                             break;
                         case "3":
-                            //DisplayAllMeals();
+                            ListAllBadges();
                             break;
                         case "4":
                             Console.WriteLine("Closing Software");
@@ -89,17 +89,46 @@ namespace BadgeUI
             Console.Clear();
             Console.WriteLine("What is the number on the Badge?");
             int input = Int32.Parse(Console.ReadLine());
-            foreach(KeyValuePair<int, List<string>> kvp in badgeDictionary)
+            foreach (KeyValuePair<int, List<string>> kvp in badgeDictionary)
             {
-              if(input == kvp.Key)
+                if (input == kvp.Key)
                 {
                     Console.WriteLine($"{kvp.Key} has access to doors:");
-                    foreach(string element in kvp.Value)
+                    foreach (string element in kvp.Value)
                     {
                         Console.WriteLine($"{element}");
-                    } 
+                    }
+                    Console.WriteLine("What would you like to do?\n" +
+                              "1. Remove a Door\n" +
+                              "2. Add a Door");
+                    string alterDoor = Console.ReadLine();
+                    switch (alterDoor)
+                    {
+                        case "1":
+                            Console.WriteLine("Which Door to Remove?");
+                            foreach (string element in kvp.Value)
+                            {
+                                Console.WriteLine($"{element}");
+                            }
+                            kvp.Value.Remove(Console.ReadLine());
+                            break;
+                        case "2":
+                            Console.WriteLine("Which Door to Add?");
+                            kvp.Value.Add(Console.ReadLine());
+                            break;
+                        default:
+                            Console.WriteLine("Please enter a valid selection.");
+                            break;
+                    }
                 }
             }
+            Console.WriteLine("Press any key to continue.");
+            Console.ReadKey();
+            Console.Clear();
+        }
+        private void ListAllBadges()
+        {
+
         }
     }
 }
