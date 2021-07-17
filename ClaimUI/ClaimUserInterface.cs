@@ -11,7 +11,6 @@ namespace ClaimUI
     class ClaimUserInterface
     {
         private ClaimRepository _ClaimRepo = new ClaimRepository();
-        private Queue<Claim.Claim> claimsQueue = new Queue<Claim.Claim>();
         public void Run()
         {
             Menu();
@@ -86,13 +85,12 @@ namespace ClaimUI
             {
                 newClaim.IsValid = false;
             }
-            _ClaimRepo.AddClaimToList(newClaim); //needs removed?
-            claimsQueue.Enqueue(newClaim);
+            _ClaimRepo.AddClaimToQueue(newClaim);
         }
         private void DisplayAllClaims()
         {
             Console.Clear();
-            List<Claim.Claim> listOfClaims = _ClaimRepo.GetClaimList();
+            Queue<Claim.Claim> listOfClaims = _ClaimRepo.GetClaimQueue();
             Console.WriteLine("ClaimID     Type     Description     Amount     DateOfAccident     DateOfClaim     IsValid");
             foreach (Claim.Claim claim in listOfClaims) //I wanted to build a "printer" method so bad, but couldn't get it working fast enough.
             {
@@ -102,7 +100,7 @@ namespace ClaimUI
         private void NextClaim()
         {
             Console.Clear();
-            Claim.Claim claimPeeked = claimsQueue.Peek();
+            Claim.Claim claimPeeked = _ClaimRepo.PeekNextClaim();
             Console.WriteLine($"ClaimID: {claimPeeked.ClaimID}\n" +
                               $"Type: {claimPeeked.ClaimType}\n" +
                               $"Description: {claimPeeked.Description}\n" +
@@ -114,7 +112,7 @@ namespace ClaimUI
             string nowInput = Console.ReadLine().ToLower();
             switch (nowInput)
             {
-                case "y": claimPeeked = claimsQueue.Dequeue();
+                case "y": claimPeeked = _ClaimRepo.DequeueClaim(); //had to refer to repo's method
                     break;
                 case "n": Console.WriteLine("Returning to Main Menu:");
                     break;
@@ -124,7 +122,6 @@ namespace ClaimUI
             Console.WriteLine("Press any key to continue.");
             Console.ReadKey();
             Console.Clear();
-            // claim.claim lastCleared = claimsQueue.Dequeue(); ender
         }
     }
 }

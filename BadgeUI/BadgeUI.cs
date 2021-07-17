@@ -10,8 +10,7 @@ namespace BadgeUI
 {
     class BadgeUI
     {
-        public Dictionary<int, List<string>> badgeDictionary = new Dictionary<int, List<string>>();
-        private BadgeRepository _BadgeRepo = new BadgeRepository();
+        public BadgeRepository _BadgeRepo = new BadgeRepository();
         public void Run()
         {
             Menu();
@@ -58,7 +57,7 @@ namespace BadgeUI
         {
             Console.Clear();
             Badge newBadge = new Badge();
-            newBadge.DoorNames =  new List<string>();
+            newBadge.DoorNames = new List<string>();
             Console.WriteLine("What's the number on the badge?");
             newBadge.BadgeID = Int32.Parse(Console.ReadLine());
             bool adding = true;
@@ -89,38 +88,32 @@ namespace BadgeUI
             Console.Clear();
             Console.WriteLine("What is the number on the Badge?");
             int input = Int32.Parse(Console.ReadLine());
-            foreach (KeyValuePair<int, List<string>> kvp in badgeDictionary)
+            List<string> doors = _BadgeRepo.GetListOfDoors(input); //new
+            foreach (string element in doors)
             {
-                if (input == kvp.Key)
-                {
-                    Console.WriteLine($"{kvp.Key} has access to doors:");
-                    foreach (string element in kvp.Value)
+                Console.WriteLine($"{element}");
+            }
+            Console.WriteLine("What would you like to do?\n" +
+                      "1. Remove a Door\n" +
+                      "2. Add a Door");
+            string alterDoor = Console.ReadLine();
+            switch (alterDoor)
+            {
+                case "1":
+                    Console.WriteLine("Which Door to Remove?");
+                    foreach (string element in doors)
                     {
                         Console.WriteLine($"{element}");
                     }
-                    Console.WriteLine("What would you like to do?\n" +
-                              "1. Remove a Door\n" +
-                              "2. Add a Door");
-                    string alterDoor = Console.ReadLine();
-                    switch (alterDoor)
-                    {
-                        case "1":
-                            Console.WriteLine("Which Door to Remove?");
-                            foreach (string element in kvp.Value)
-                            {
-                                Console.WriteLine($"{element}");
-                            }
-                            kvp.Value.Remove(Console.ReadLine());
-                            break;
-                        case "2":
-                            Console.WriteLine("Which Door to Add?");
-                            kvp.Value.Add(Console.ReadLine());
-                            break;
-                        default:
-                            Console.WriteLine("Please enter a valid selection.");
-                            break;
-                    }
-                }
+                    doors.Remove(Console.ReadLine());
+                    break;
+                case "2":
+                    Console.WriteLine("Which Door to Add?");
+                    doors.Add(Console.ReadLine());
+                    break;
+                default:
+                    Console.WriteLine("Please enter a valid selection.");
+                    break;
             }
             Console.WriteLine("Press any key to continue.");
             Console.ReadKey();
@@ -128,10 +121,15 @@ namespace BadgeUI
         }
         private void ListAllBadges()
         {
-            foreach(KeyValuePair<int, List<string>> kvp in badgeDictionary)
+            foreach (KeyValuePair<int, List<string>> kvp in _BadgeRepo.badgeDictionary)
             {
-                Console.WriteLine($"Badge #{kvp.Key} Door Access {kvp.Value}");
+                Console.WriteLine($"Badge #{kvp.Key}");
+                foreach (string door in kvp.Value)
+                {
+                    Console.WriteLine($"Access to {door}");
+                }
             }
         }
     }
 }
+

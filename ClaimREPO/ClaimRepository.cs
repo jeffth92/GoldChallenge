@@ -9,14 +9,22 @@ namespace ClaimREPO
 {
     public class ClaimRepository
     {
-        private List<Claim.Claim> _ListOfClaims = new List<Claim.Claim>();
-        public void AddClaimToList(Claim.Claim claim) //create
+        private Queue<Claim.Claim> _queueOfClaims = new Queue<Claim.Claim>();
+        public void AddClaimToQueue(Claim.Claim claim) //create
         {
-            _ListOfClaims.Add(claim);
+            _queueOfClaims.Enqueue(claim);
         }
-        public List<Claim.Claim> GetClaimList() //read
+        public Queue<Claim.Claim> GetClaimQueue() //read all
         {
-            return _ListOfClaims;
+            return _queueOfClaims;
+        }
+        public Claim.Claim PeekNextClaim() // read one
+        {
+            return _queueOfClaims.Peek();
+        }
+        public Claim.Claim DequeueClaim() //delete
+        {
+            return _queueOfClaims.Dequeue();
         }
     }
 }
