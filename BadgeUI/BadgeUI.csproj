@@ -43,11 +43,22 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BadgeUI.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BadgeREPO\BadgeREPO.csproj">
+      <Project>{B60D26FF-13F3-4CE7-9002-0A8683B2FAE3}</Project>
+      <Name>BadgeREPO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Badge\BadgeClass.csproj">
+      <Project>{65B644E3-1222-4CC5-9D2E-3CF224F2DB79}</Project>
+      <Name>BadgeClass</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

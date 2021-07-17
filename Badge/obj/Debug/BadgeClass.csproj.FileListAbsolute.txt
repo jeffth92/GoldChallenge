@@ -1,0 +1,6 @@
+C:\Users\jefft\source\repos\GoldChallenge\Badge\bin\Debug\Badge.dll
+C:\Users\jefft\source\repos\GoldChallenge\Badge\bin\Debug\Badge.pdb
+C:\Users\jefft\source\repos\GoldChallenge\Badge\obj\Debug\BadgeClass.csproj.AssemblyReference.cache
+C:\Users\jefft\source\repos\GoldChallenge\Badge\obj\Debug\BadgeClass.csproj.CoreCompileInputs.cache
+C:\Users\jefft\source\repos\GoldChallenge\Badge\obj\Debug\Badge.dll
+C:\Users\jefft\source\repos\GoldChallenge\Badge\obj\Debug\Badge.pdb

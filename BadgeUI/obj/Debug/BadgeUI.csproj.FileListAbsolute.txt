@@ -1,0 +1,12 @@
+C:\Users\jefft\source\repos\GoldChallenge\BadgeUI\bin\Debug\BadgeUI.exe.config
+C:\Users\jefft\source\repos\GoldChallenge\BadgeUI\bin\Debug\BadgeUI.exe
+C:\Users\jefft\source\repos\GoldChallenge\BadgeUI\bin\Debug\BadgeUI.pdb
+C:\Users\jefft\source\repos\GoldChallenge\BadgeUI\bin\Debug\Badge.dll
+C:\Users\jefft\source\repos\GoldChallenge\BadgeUI\bin\Debug\BadgeREPO.dll
+C:\Users\jefft\source\repos\GoldChallenge\BadgeUI\bin\Debug\BadgeREPO.pdb
+C:\Users\jefft\source\repos\GoldChallenge\BadgeUI\bin\Debug\Badge.pdb
+C:\Users\jefft\source\repos\GoldChallenge\BadgeUI\obj\Debug\BadgeUI.csproj.AssemblyReference.cache
+C:\Users\jefft\source\repos\GoldChallenge\BadgeUI\obj\Debug\BadgeUI.csproj.CoreCompileInputs.cache
+C:\Users\jefft\source\repos\GoldChallenge\BadgeUI\obj\Debug\BadgeUI.csproj.CopyComplete
+C:\Users\jefft\source\repos\GoldChallenge\BadgeUI\obj\Debug\BadgeUI.exe
+C:\Users\jefft\source\repos\GoldChallenge\BadgeUI\obj\Debug\BadgeUI.pdb

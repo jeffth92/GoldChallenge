@@ -4,9 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Badge
+namespace BadgeClass
 {
     public class Badge
     {
+        public int BadgeID { get; set; }
+        public List<string> DoorNames { get; set; }
     }
 }
