@@ -7,8 +7,10 @@ namespace ClaimsTEST
     public class ClaimsTesting
     {
         [TestMethod]
-        public void TestMethod1()
+        public void GetClaimList_Exists()
         {
+            //arrange
+            //Claim.Claim claim = new Claim.Claim(1, "theft", "cheese",2.00m, 12-12-12, 12-12-12, true); //cant fix fast enough, commenting out
         }
     }
 }
